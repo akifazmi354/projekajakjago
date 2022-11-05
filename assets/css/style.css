@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+* {
+		margin: 0;
+		padding: 0;
+		font-family: 'Quicksand', sans-serif;
+	}
+
+html {
+	background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.profile-img {
+	margin-top: 90px;
+	background-image: url(/assets/img/profile.jpeg);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-size: cover;
+	grid-area: profile;
+	justify-self: center;
+	border: 2px solid #6B728E;
+	box-shadow: 0 0 10px #6B728E;
+	transition: all 400ms ease;
+}
+
+.profile-img:hover{  
+	transform: scale(0.9);
+}
+
+header {
+	margin-top: -20px;
+	width: 90%;
+	display: grid;
+	grid-template-areas:
+	"profile  profile"
+	"intro  intro"
+	"about  skill"
+	"education  portofolio"
+	"sosmed sosmed";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows : auto;
+	gap: 25px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.panel-intro {
+margin-top: -10px;
+margin-bottom: 20px;
+grid-area: intro;
+justify-self: center;
+}
+
+.panel-intro .intro-1 {
+	font-size: 2em;
+}
+
+.panel-intro .intro-2 {
+	font-size: 1.2em;
+	text-align: center;
+
+}
+.about {
+	grid-area: about;
+	box-shadow: 0 0 10px rgb(250, 250, 250, 0.9) ;
+	padding: 20px;
+	background-color: #6B728E;;
+	border-radius: 20PX;
+	transition: all 800ms ease;
+}
+
+.skill {
+	grid-area: skill;
+	box-shadow: 0 0 10px rgb(250, 250, 250, 0.4);
+	padding: 20px;
+	background-color: #474E68;
+	border-radius: 20PX;
+	transition: all 800ms ease;
+}
+
+.education {
+	grid-area: education;
+	box-shadow: 0 0 10px rgb(250, 250, 250, 0.4);
+	padding: 20px;
+	background-color: #474E68;
+	border-radius: 20PX;
+	transition: all 800ms ease;
+}
+
+.about:hover,.skill:hover,.education:hover,.portofolio:hover{
+	transform: scale(0.9) ;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 10px;
+	padding: 10px;}
+
+.porto {
+	height: 65px;
+	border-radius: 40px;
+	padding: 33px; 
+}
+
+
+
+
+.portofolio {
+	grid-area: portofolio;
+	box-shadow: 0 0 10px rgb(250, 250, 250, 0.9);
+	padding: 20px;
+	background-color: #6B728E;
+	border-radius: 20PX;
+	transition: all 800ms ease;
+}
+
+
+.sosmed {
+	grid-area: sosmed;
+	justify-self: center;
+	width: 400px;
+	height: 80px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center ;
+ background-color:  #6B728E;
+border-radius: 20px;
+box-shadow:  0 0 10px white ;
+}
+
+.sosmed:hover{
+	background-color: #474E68;
+	transition: all 800ms;
+}
+.sosmed i {
+	font-size: 40px;
+}
